@@ -8,18 +8,42 @@
 	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 </head>
-<body>
+<body class='ui-mobile-viewport'>
 <div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>Protecci&oacute; Canina</h1>
-  </div>
-  <div data-role="main" class="ui-content">
-    <p>
-      <button id='btn-reportes'>Reportes</button>
-      <button id='btn-solicitud'>Solicitud</button>
-      <button id='btn-informacion'>Informaci&oacute;n</button>
-    </p>
-  </div>
+  <div data-role="header" data-theme="b">
+		<h1>Protección Canina</h1>
+    <a href="../../" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">
+      Inicio
+    </a>
+	</div><!-- /header -->
+    <!-- Inicio subMenu -->
+		<ul data-role="listview" data-inset="true">
+			<li><!-- Reportes -->
+        <a href="docs-lists.html">Reportes</a>
+        <ul data-role="listview" data-theme="a" data-dividertheme="d">
+          <li><button id='btn-extraviado'>Extraviado</button></li>
+          <li><button id='btn-encontrados'>Encontrados</button></li>
+          <li><button id='btn-atropellados'>Atropellados</button></li>
+        </ul>
+      </li><!-- /Reportes -->
+			<li><!-- Adopciones -->
+        <a href="docs-lists.html">Adopciones</a>
+        <ul data-role="listview" data-theme="a" data-dividertheme="d">
+          <li><button id='btn-adoptar'>Adoptar un perro</button></li>
+          <li><button id='btn-dar-adopcion'>Dar en adopcion</button></li>
+        </ul>
+      </li><!-- /Adopciones -->
+			<li><!-- Información -->
+        <a href="docs-lists.html">Informaci&oacute;n</a>
+        <ul data-role="listview" data-theme="a" data-dividertheme="d">
+          <li><button id='btn-extraviado'>Extraviado</button></li>
+          <li><button id='btn-encontrados'>Encontrados</button></li>
+          <li><button id='btn-atropellados'>Atropellados</button></li>
+        </ul>
+      </li><!-- /Información -->
+			<!--<li><a href="api-lists.html">API documentation</a></li>-->
+		</ul>
+    <!-- Fin subMenu -->
 
   <div data-role="footer">
     <button id='btn-registro'>Registro</button>
@@ -31,6 +55,7 @@
   <script src="js/silly.js"></script>
   <script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script src="js/app.js"></script>
 
 </body>
 </html>
