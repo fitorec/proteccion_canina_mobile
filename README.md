@@ -1,4 +1,4 @@
-proteccion_canina_mobile
-========================
+Protección Canina una aplicación movíl para el hackaton
+==========================================================================================
 
-Protección canina - Aplicación para moviles
+.... esto esta pendiente.
